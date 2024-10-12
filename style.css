@@ -1,0 +1,142 @@
+/* reset css */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    background-color: #ae9cff;
+    font-family: "Poppins", sans-serif;
+}
+
+/*  */
+.container{
+    background-color: #ffffff;
+    width: 80rem;
+    /* fix vậy thì khi có show nội dung ra nó cx không bị lệch mà sẽ ngay giữa */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8rem 5rem;
+    box-shadow: 20px 30px 50px rgba(38, 33, 61, 0.2);
+    border-radius: 1rem;
+}
+
+.block__fa__input{
+    display: flex;
+    justify-content: space-around;
+}
+
+#inp-word{
+    width: 65%;
+    height: 4rem;
+    border-bottom: 3px solid #ae9cff;
+    border-radius: 0%;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    font-size: 1.7rem;
+    font-weight: 450;
+}
+
+#inp-word:focus{
+    outline: none;
+    box-shadow: none;
+    outline-offset: none;
+    border: none;
+    border-radius: 0%;
+    border-bottom: 3px solid #ae9cff;
+}
+
+#inp-word::placeholder{
+    font-size: 1.5rem;
+}
+
+#search-btn{
+    width: 22%;
+    outline: none;
+    border: none;
+    background-color: #9783f1;
+    font-size: 1.8rem;
+    color: #ffffff;
+    border-radius: 9px;
+    transition: 0.2s ease-in-out;
+}
+
+#search-btn:hover{
+    transform: translateY(-5px);
+}
+
+/* result */
+.result{
+    margin-top: 7.5rem;
+    padding: 0 2rem;
+}
+
+.block1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.block1 h1{
+    font-size: 3rem;
+    font-weight: 570;
+}
+
+.block1 button{
+    border: none;
+    background-color: #ffffff;
+    font-size: 2.5rem;
+}
+
+.block2{
+    display: flex;
+}
+
+.block2 p{
+    margin-right: 1rem;
+    color: #a3a6d3;
+}
+
+.block3{
+    margin: 2rem 0;
+}
+
+.block3 p{
+    font-size: 2rem;
+    color: #575a7b;
+}
+
+.block4 p{
+    color: #575a7b;
+    font-style: italic;
+    font-size: 1.6rem;
+    padding-left: 2rem;
+    border-left: 7px solid #ae9cff;
+}
+
+/* notification */
+.notification{
+    color: red;
+    text-align: center;
+}
+
+/* cái loa đổi màu */
+.speaker{
+    transition: 0.2s;
+}
+
+.speaker:active{
+    color: #9783f1;
+    transform: translateY(-4px);
+}
+
+
